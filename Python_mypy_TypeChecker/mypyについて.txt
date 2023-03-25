@@ -1,0 +1,20 @@
+■mypyについて
+・安全なコードを書く上で重要なツール
+→変数に代入される型をチェックすることができる
+
+■Pythonにおける型ヒント
+・Pythonは動的型付き言語
+・最近では型を記載するのが一般的
+→型ヒント：変数や関数の引数、戻り値の型を示すことができる文法
+
+■インストール
+>>>pip install mypy==0.770
+
+■設定可能なパラメータ
+mypyの設定はコマンドライン引数、または設定用ファイル（mypy.iniまたはsetup.cfg）に記述します
+
+
+■参考資料
+mypy公式ドキュメント
+https://mypy.readthedocs.io/en/latest/cheat_sheet_py3.html
+typingモジュールについて
