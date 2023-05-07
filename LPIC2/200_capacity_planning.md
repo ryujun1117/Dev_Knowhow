@@ -21,7 +21,7 @@ load averageは平均負荷。3つの数字は1,5,15分の平均数。cpuコア�
 - TIME+: プロセスが開始して使用したCPU時間の総計
 - COMMAND: 実行コマンド
 
-**vmstat** 
+**vmstat**  
 option(表示間隔　回数)
 メモリ及び仮想メモリの詳細な状態を継続的に監視できる  
 ![vmstat](image/200_images/vmstat.png "vmstat")
