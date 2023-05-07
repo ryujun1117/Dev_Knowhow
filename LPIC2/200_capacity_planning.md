@@ -95,14 +95,14 @@ option(-b, -k, -m, -t, -o, -s)
 **df**  
 option(-a, -h, -H, -i, -l, -m, -T)
 キャパシティプランニングではディスクI/Oだけでなく、ディスクの使用量にも注意を払う必要がある。ディスク使用量を測定するにはdfコマンドを利用できます。dfコマンドを使用すると、ディスクの使用量や使用している割合を確認できる。
-![df](image/200_images/df.png "df")
+![df](image/200_images/df-am.png "df")
 
 ## ネットワークトラフィックの測定
 
 **netstat**  
 ネットワークインターフェースの情報はnetstatコマンドで調べることができる  
 -sオプションで、プロトコルごとの統計情報を表示できる。  
-![netstat](image/200_images/netstat.png "netstat")
+![netstat](image/200_images/netstat-i.png "netstat")
 - RX-ERR: 受信におけるエラー数
 - TX-ERR: 転送におけるエラー数
 - RX-DRP: 受信時の取りこぼし数
