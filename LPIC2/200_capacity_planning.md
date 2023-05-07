@@ -24,7 +24,7 @@ load averageは平均負荷。3つの数字は1,5,15分の平均数。cpuコア�
 **vmstat** 
 option(表示間隔　回数)
 メモリ及び仮想メモリの詳細な状態を継続的に監視できる  
-![スクリーンショット 2023-05-06 15.51.10.png](https://boostnote.io/api/teams/9hAQVoKDG/files/22d0b476f4eefedb680cb7e64e35628ecfb8518d5652c3be71f4f1d32ffe9a44-%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202023-05-06%2015.51.10.png)
+![vmstat](image/200_images/vmstat.png "vmstat")
 
 - procs
   - r: 実行待ちプロセス数
@@ -40,7 +40,7 @@ option(表示間隔　回数)
 **iostat**  
 option(-c, -d, -k, -t)  
 CPUの使用状況とディスクの入出力に関する情報を継続的に監視できる。主にディスクI/Oを調べる場合に使う。  
-![スクリーンショット 2023-05-06 16.05.36.png](https://boostnote.io/api/teams/9hAQVoKDG/files/17d0eb2e8105958377e4ff67aab0a85cbcd6eb5e1394bfaa825e2e0af2793b72-%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202023-05-06%2016.05.36.png)
+![iostat](image/200_images/iostat.png "iostat")
 
 **iotop**  
 
@@ -53,13 +53,13 @@ option(-j, -x, -t, --)
 メモリ関連情報をタブ区切りテキストで出力する  
 
 **uptime**  
-![スクリーンショット 2023-05-06 16.17.00.png](https://boostnote.io/api/teams/9hAQVoKDG/files/7027b6bdfaea5907e42187d696618ab35a659e4363affe7dfb8febe2d55995f8-%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202023-05-06%2016.17.00.png)
+![uptime](image/200_images/uptime.png "uptime")
 topコマンドの一行目とほとんど同じ
 
 **w**  
 option(-h, -s)  
 現在ログインしているユーザと各ユーザーのプロセス情報が表示される
-![スクリーンショット 2023-05-06 17.16.23.png](https://boostnote.io/api/teams/9hAQVoKDG/files/1a4d81a2b0ff569cca5b259507244b9fe60fda2b90bb9157b4766d2956e21f95-%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202023-05-06%2017.16.23.png)
+![w](image/200_images/w.png "w")
 - TTY: 端末名
 - JCPU: 当該端末から実行されている全プロセスが消費したCPU時間
 - PCPU: WHAT欄に表示されるカレントプロセスが消費したCPU時間
@@ -69,8 +69,7 @@ option(-h, -s)
 **ps**  
 CPUの使用率を測定するには、先に挙げたtop, vmstat, iostat, sadc / sar コマンドなどが利用できる。  
 psコマンドを利用することでプロセス単位でより詳細な情報を確認することができる
-![スクリーンショット 2023-05-06 17.26.52.png](https://boostnote.io/api/teams/9hAQVoKDG/files/585247c797256616f1d3d35a938ce7d754d5f31c49fd217dff1b09ffac530a1e-%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202023-05-06%2017.26.52.png)
-![スクリーンショット 2023-05-06 17.27.49.png](https://boostnote.io/api/teams/9hAQVoKDG/files/a899bda7a4d6a48087f09018e4f992db5c563636375e18dd6a2fec9f61403c16-%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202023-05-06%2017.27.49.png)
+![ps](image/200_images/ps.png "ps")
 
 - VSG: プロセスが使用するメモリ量
 - RSS: 現時点で使用中のメモリ量
@@ -78,7 +77,7 @@ psコマンドを利用することでプロセス単位でより詳細な情報
 
 **pstree**  
 プロセスの親子関係をツリー状に表示できる  
-![スクリーンショット 2023-05-06 17.35.47.png](https://boostnote.io/api/teams/9hAQVoKDG/files/2d3515b29d87432cb24b6d5441ab7c6112aa5f71d75ce143ea6f2c8c51ea15c8-%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202023-05-06%2017.35.47.png)
+![pstree](image/200_images/pstree.png "pstree")
 lsofコマンドも同じように使える
 
 ## メモリ及びスワップ使用量の測定
@@ -86,24 +85,24 @@ lsofコマンドも同じように使える
 **free**  
 option(-b, -k, -m, -t, -o, -s)  
 メモリ使用量を測定するには、先に挙げたtop, sadc / sarコマンドなどが利用できる他、freeコマンドも利用できる。  
-![スクリーンショット 2023-05-06 17.39.41.png](https://boostnote.io/api/teams/9hAQVoKDG/files/cc43c6cbeb9dd42bdd200625150df51e2eff34da176f718134f95cad7745e680-%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202023-05-06%2017.39.41.png)
+![free](image/200_images/free.png "free")
 
 より詳細なメモリ使用量を確認する場合、、/proc/meminfoを参照する。
-![スクリーンショット 2023-05-06 17.43.41.png](https://boostnote.io/api/teams/9hAQVoKDG/files/d739be0d769dab426a0f9d5dc293cb0fed733f62c15bef3ecd7877bb94d5fd1e-%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202023-05-06%2017.43.41.png)
+![proc_memoinfo](image/200_images/cat_proc_meminfo.png "proc_memoinfo")
 
 ## ディスク使用量の測定
 
 **df**  
 option(-a, -h, -H, -i, -l, -m, -T)
 キャパシティプランニングではディスクI/Oだけでなく、ディスクの使用量にも注意を払う必要がある。ディスク使用量を測定するにはdfコマンドを利用できます。dfコマンドを使用すると、ディスクの使用量や使用している割合を確認できる。
-![スクリーンショット 2023-05-06 17.47.31.png](https://boostnote.io/api/teams/9hAQVoKDG/files/935058d64fb59685b0a4634c69a362a1caf82ecec726dc97ed76cfd8f2e8a7a6-%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202023-05-06%2017.47.31.png)
+![df](image/200_images/df.png "df")
 
 ## ネットワークトラフィックの測定
 
 **netstat**  
 ネットワークインターフェースの情報はnetstatコマンドで調べることができる  
 -sオプションで、プロトコルごとの統計情報を表示できる。  
-![スクリーンショット 2023-05-06 18.11.53.png](https://boostnote.io/api/teams/9hAQVoKDG/files/a57f1ccd2e4650d4b8376c39809d8020207c038d988d5f8da3cdbad58ea9ef09-%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202023-05-06%2018.11.53.png)
+![netstat](image/200_images/netstat.png "netstat")
 - RX-ERR: 受信におけるエラー数
 - TX-ERR: 転送におけるエラー数
 - RX-DRP: 受信時の取りこぼし数
